@@ -5,7 +5,7 @@ using ConsoleLibrary;
 using DataAccessLayer;
 using Model;
 
-DataSet libraryDataSet = DataSetAccessLayer.GetDataSet();
+//DataSet libraryDataSet = DataSetAccessLayer.GetDataSet();
 //GlobalData.libraryDataSet =new System.Data.DataSet("Library");
 IRepository<Reservation> reservationRepository = new ReservationRepository();
 IRepository<User> userRepository = new UserRepository();

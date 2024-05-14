@@ -15,13 +15,19 @@ namespace DataAccessLayer
         public static DataSetAccessLayer layer;
         public static DataSet libraryDataSet;// = new DataSet("Library");
         private string path = "Libreria.xml";
-        
+
 
         public static DataSet GetDataSet()
-        { if (libraryDataSet ==null)
-            {  libraryDataSet = new DataSet("Library"); }
+        {
+            if (libraryDataSet == null)
+            {
+                libraryDataSet = new DataSet("Library");
+                // Qui potresti aggiungere ulteriore logica per inizializzare il DataSet, se necessario
+            }
+            return libraryDataSet;
+        }
 
-            return libraryDataSet; }
+            
         public string GetPath() { return path; }
 
         public void LoadDataSet()

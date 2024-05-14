@@ -7,7 +7,7 @@ using System.Data;
 namespace BusinessLogic
 {
     public class BusnessService
-    {
+    {   
         private IRepository<Book> bookRepository;
         private IRepository<User> userRepository;
         private IRepository<Reservation> reservationRepository;
